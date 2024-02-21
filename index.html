@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Anurag Naren Portfolio</title>
+		<title>Anurag Naren's portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,8 +15,22 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>My portfolio</h1>
-						<p>I am K.Anurag Naren and I welcome you to my portfolio.<br />This is a showcase of my projects and I am glad you're here. :D </p>
+						<h3>Welcome to</h3><h1>Anurag's portfolio</h1>
+						<p>Hi, This is Anurag Naren Kallakunta.<br>
+							 A current masters student at UNC Charlotte with 2 years of software engineering experience graduating in May 2024.<br>
+							 <button onclick="redirectToResume()">My Resume</button>
+
+							 <!-- JavaScript function to handle the redirect -->
+							 <script>
+								 function redirectToResume() {
+									 // Replace 'YOUR_GOOGLE_DRIVE_LINK' with the actual Google Drive link
+									 var googleDriveLink = 'https://drive.google.com/file/d/1EXcdYWDfemg0KXMO2DFSKeJ2Nb2H_3rq/view?usp=sharing';
+									 
+									 // Redirecting the site to the Google Drive link
+									 window.open(googleDriveLink, '_blank');
+								 }
+							 </script>
+						</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -30,10 +44,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Profiles</a></li>
+							<li class="active"><a href="index.html">Anurag's Profile</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/anurag-naren-4094ba172/" target="_blank" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/anuragnaren/" target="_blank" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
 							<li><a href="https://github.com/anurag2108" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
@@ -44,19 +58,76 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="#">Anurag naren.K <br /></a></h2>
-									<p>I am about to Graduate as an engineer in 2021 and I like to watch movies! :) </p>
+									<h2><a href="#">Anurag Naren Kallakunta<br /></a></h2>
+									<p>
+									A current <b>Master's student at University of North Carolina</b> with Data Science concentration at Charlotte with a 4.0 CGPA taking courses such as Computer vision, NLP, Big Data.
+									Around 2 years of full stack development experience working as a software associate for <b>Hitachi Vantara</b> proficient in Java, Spring Boot, Junit, Mockito, Docker, Kubernetes. 
+									I currently work as a <b>Graduate Teaching assistant for Software System Design Implementation and Machine learning</b> courses.
+									I have also worked as a <b>Research assistant</b> over the summer at  Complex Systems Institute Lab at UNC Charlotte over the summer in the field of computer vision.
+									</p>
 								</header>
-								<a href="#" class="image main"><img src="images/profileimage.png" alt="" /></a>
-								<!--<ul class="actions special">
-									<li><a href="#" class="button large">Check it out!</a></li>
-								</ul> -->
+								<!--<a href="#" class="image main"><img src="images/profileimage.png" alt="" /></a>-->
+								<ul class="actions special">
+									<li><a href="#posts" class="button large">My Projects</a></li>
+								</ul> 
 
 
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
+							<section id ="posts" class="posts">
+								<article>
+									<header>
+										<h2>DiscussFlicks<br />
+										</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/review.jpg" alt="" /></a>
+									<p>Created using Spring boot as backend, React & bootstrap as frontend and MongoDB as the database, this is a movie review website which helps the user play the trailers, review & have a discussion about the movies.
+										<br>
+										<b>Tech stack:</b>Java Spring Boot, ReactJS, MongoDB, Ngrok, Bootstrap.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/anurag2108/DiscussFlicks"  target="_blank" class="button">Check it out!</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2>Course Exchange<br />
+										</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/course-exchange.jpg" alt="" /></a>
+									<p> Created a course exchange website using MVC architecture, enabling users to log-in, initiate, edit, decline,cancel course trades and manage their watchlist by adding new courses.
+										<br><b>Tech stack:</b> Javascript, MongoDB, ExpressJS, Ngrok.
+									</p>
+									<ul class="actions special">
+
+										
+										<button onclick="redirectToGoogleDrive()">Check it out!</button>
+										<!-- JavaScript function to handle the redirect -->
+										<script>
+											function redirectToGoogleDrive() {
+												// Replace 'YOUR_GOOGLE_DRIVE_LINK' with the actual Google Drive link
+												var googleDriveLink = 'https://drive.google.com/file/d/1eXawRUu2A7gKpnuJAyirkVhHvoi_367P/view?usp=sharing';
+												
+												// Redirecting the site to the Google Drive link
+												window.open(googleDriveLink, '_blank');
+											}
+										</script>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2>Project-Crypto<br />
+										</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/crypto.jpg" alt="" /></a>
+									<p>Integrated cryptocurrency details(prices,news) from Coinranking RapidAPI and analyzed the time-related prices of respective cryptocurrencies using line chart.
+										<br>  <b>Tech stack:</b> ReactJS, Rapid API
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/anurag2108/Project-Crypto"  target="_blank" class="button">Check it out!</a></li>
+									</ul>
+								</article>
 								<article>
 									<header>
 										<h2>Messaging App<br />
@@ -64,6 +135,7 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/messageimage.jpg" alt="" /></a>
 									<p>Created a one on one Android messaging application using Native Java and Firebase.
+										<br>  <b>Tech stack:</b> Native Java, Firebase
 									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/anurag2108/MessageApp"  target="_blank" class="button">Check it out!</a></li>
@@ -75,21 +147,36 @@
 										</h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/musicimage.jpg" alt="" /></a>
-									<p>Option to download and play songs ,Load local mp3 files.<br />Created the music Application with Google Storage API.</p>
+									<p>Option to download and play songs ,Load local mp3 files.<br />Created the music Application with Google Storage API.
+										<br>  <b>Tech stack:</b> Native Java, Firebase, Google storage API
+									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/anurag2108/MusicApp" target="_blank" class="button">Check it out!</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										
-										<h2>Application for User Data<br />
+										<h2>Data Analyst Survey Analysis using PowerBI<br />
 										</h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/userdataimage.jpg" alt="" /></a>
-									<p>Implemented User Login/Register functionality.Stored User data,Images into Firebase.</p>
+									<p>visualization created using a survey submitted by 700 data analysts about how they feel about their job, what their current salary is and other such information.
+										<br>  <b>Tech stack:</b> PowerBI, Power Query</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/anurag2108/Vastu"  target="_blank" class="button">Check it out!</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2>Replicating MonoHuman<br />
+										</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/monohuman.jpg" alt="" /></a>
+									<source src="images/monohuman.mp4" type="video/mp4">
+									<p>Replicated the results of the github MonoHumanl which robustly renders view-consistent and high-fidelity avatars under arbitrary novel poses. Trained the model for about 10 hours on colab GPU and provided step by step instructions to replicate the results on my repository.
+										<br><b>Tech stack:</b> Tensorflow, Python</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/anurag2108/MonoHuman-Team10"  target="_blank" class="button">Check it out!</a></li>
 									</ul>
 								</article>
 								<article>
@@ -101,7 +188,7 @@
 									<a href="#" class="image fit"><img src="images/gfgarticle.PNG" alt="" /></a>
 									<p>Wrote technical articles on geeks for geeks.<br />The below linked one is regarding the modification of XML files in python.</p>
 									<ul class="actions special">
-										<li><a href="https://www.geeksforgeeks.org/modify-xml-files-with-python/" class="button">Check it out!</a></li>
+										<li><a href="https://www.geeksforgeeks.org/modify-xml-files-with-python/" target="_blank" class="button">Check it out!</a></li>
 									</ul>
 								</article>
 								
@@ -113,12 +200,12 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>Nagole,Hyderabad,Telangana.<br />
+								<p>Charlotte, North Carolina, 28262<br />
 								</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p>+91 9573673517</p>
+								<p>+19016315259</p>
 							</section>
 							<section>
 								<h3>Email</h3>
@@ -127,20 +214,13 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									
-									<li><a href="https://www.facebook.com/anunaren21/" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/anu_naren/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/anuragnaren/" target="_blank" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/anurag2108" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="https://twitter.com/NarenAnurag" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 								</ul>
 							</section>
 						</section>
 					</footer>
-
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://www.instagram.com/anu_naren/" target="_blank">Anurag Naren</a></li></ul>
-					</div>
-
 			</div>
 
 		<!-- Scripts -->
